@@ -21,14 +21,17 @@ where `m(x)` is the diffusivity field and `u(x)` is the solution.
 ## Repository Structure
 
 ```
-├── Deeponet_Poisson.ipynb     # Main Jupyter notebook with implementation
-├── README.md                  # This file
-├── requirements.txt           # Python dependencies
-├── LICENSE                    # MIT License
-└── .gitignore                # Git ignore file
+├── Poisson_PDE/                   # Poisson equation implementation
+│   ├── Deeponet_Poisson.ipynb    # Main Jupyter notebook
+│   ├── Poisson_samples.npz       # Training data (diffusivity fields and solutions)
+│   ├── Poisson_FNO_samples.npz   # Additional data samples
+│   ├── README.md                 # Poisson-specific documentation
+│   └── requirements.txt          # Python dependencies
+├── README.md                     # This file (main documentation)
+├── requirements.txt              # Python dependencies
+├── LICENSE                       # MIT License
+└── .gitignore                   # Git ignore file
 ```
-
-**Note:** The data files (`Poisson_samples.npz`, `Poisson_FNO_samples.npz`) are not included in this repository due to their large size. You'll need to provide your own training data or contact the repository maintainer for access to the dataset.
 
 ## Installation
 
