@@ -23,10 +23,9 @@ where `m(x)` is the diffusivity field and `u(x)` is the solution.
 ```
 ├── Poisson_PDE/                   # Poisson equation implementation
 │   ├── Deeponet_Poisson.ipynb    # Main Jupyter notebook
-│   ├── Poisson_samples.npz       # Training data (diffusivity fields and solutions)
-│   ├── Poisson_FNO_samples.npz   # Additional data samples
 │   ├── README.md                 # Poisson-specific documentation
 │   └── requirements.txt          # Python dependencies
+│   # Note: Data files (*.npz) need to be downloaded separately - see installation instructions
 ├── README.md                     # This file (main documentation)
 ├── requirements.txt              # Python dependencies
 ├── LICENSE                       # MIT License
@@ -37,14 +36,22 @@ where `m(x)` is the diffusivity field and `u(x)` is the solution.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/deeponet-poisson.git
-cd deeponet-poisson
+git clone https://github.com/Vision-jarvis/DeepONet-Project.git
+cd DeepONet-Project
 ```
 
 2. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
+
+3. **Download the required data files**:
+   
+   🔗 **Data Download Link**: https://www.dropbox.com/scl/fo/5dg02otewg7j0bt7rhkuf/APWguPa5ZRka9ePzdNR_dAc/survey_work/problems/poisson/data?dl=0&rlkey=t900geej8y8z327y5f8wu4yc9&subfolder_nav_tracking=1
+   
+   - Download `Poisson_samples.npz` and `Poisson_FNO_samples.npz`
+   - Place them in the `Poisson_PDE/` directory
+   - **For Google Colab**: Upload the files to the same directory as the notebook
 
 ## Usage
 
